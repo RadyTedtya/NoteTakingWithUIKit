@@ -8,13 +8,20 @@
 import UIKit
 
 class WelcomeViewController: UIViewController {
-
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        
     }
-
+    
+    @IBAction func onClick() {
+        let controller = UINavigationController(rootViewController: HomeViewController())
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true)
+    }
 
     /*
     // MARK: - Navigation

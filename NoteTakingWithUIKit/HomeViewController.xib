@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="NoteTakingWithUIKit" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="EYL-A9-5rx" id="yqT-cb-BW7"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,33 +19,21 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EYL-A9-5rx">
-                    <rect key="frame" x="50" y="345" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="EYL-A9-5rx">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="IbH-Iz-Jnq">
-                    <rect key="frame" x="0.0" y="404" width="393" height="44"/>
-                    <autoresizingMask key="autoresizingMask"/>
-                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IbH-Iz-Jnq" id="O4o-cJ-kRk">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </tableViewCellContentView>
-                </tableViewCell>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EYL-A9-5rx" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="7YM-5V-37d"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EYL-A9-5rx" secondAttribute="bottom" id="Ewz-ZU-fH0"/>
+                <constraint firstItem="EYL-A9-5rx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="QZy-Z8-10r"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EYL-A9-5rx" secondAttribute="trailing" id="tSV-Zh-7Dn"/>
+            </constraints>
             <point key="canvasLocation" x="365.64885496183206" y="24.647887323943664"/>
         </view>
-        <searchBar contentMode="redraw" id="CSj-zj-e7w">
-            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-            <textInputTraits key="textInputTraits"/>
-            <connections>
-                <outlet property="delegate" destination="-1" id="fKt-dA-3Jh"/>
-            </connections>
-            <point key="canvasLocation" x="833" y="10"/>
-        </searchBar>
     </objects>
     <resources>
         <systemColor name="systemBackgroundColor">
