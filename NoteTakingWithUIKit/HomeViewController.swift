@@ -24,6 +24,9 @@ class HomeViewController: UIViewController {
         tableView.dataSource = self
         title = "HomeView"
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "person.crop.circle.fill"), style: .plain, target: self, action: #selector(barButton))
+        let searchController = UISearchController(searchResultsController: nil)
+        tableView.tableHeaderView = searchController.searchBar
+        tableView.tableHeaderView?.backgroundColor = UIColor.primaryColor
     }
     
     @objc func barButton() {
