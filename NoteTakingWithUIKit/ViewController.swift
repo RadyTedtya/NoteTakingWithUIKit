@@ -5,11 +5,29 @@
 //  Created by Tedtya rady on 11/2/2023.
 //
 
+
+/*
+
+enum NoteType: String, CaseIterable, Identifiable {
+    case allNotes = "All Notes"
+    case reminderNote = "Reminder"
+    case audioNote = "Audio"
+    case imageNote = "Image"
+    
+    var id: Self {
+        return self
+    }
+    
+}
+
+
 import UIKit
 
 class ViewController: UIViewController {
     
-    let layout:UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
+    var selectedNoteType: NoteType = .allNotes
+    let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout.init()
+    let scrollView: UIScrollView = .init()
     
     
     private lazy var _collectionView: UICollectionView = {
@@ -17,14 +35,14 @@ class ViewController: UIViewController {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.delegate = self
-//        collectionView.backgroundColor = UIColor.gray
         return collectionView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         _collectionView.setCollectionViewLayout(layout, animated: true)
-        _collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "UICollectionViewCell")
+        layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
+        _collectionView.register(UINib(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
         view.addSubview(_collectionView)
         NSLayoutConstraint.activate([
             _collectionView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -37,16 +55,31 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return NoteType.allCases.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "UICollectionViewCell", for: indexPath)
-        cell.backgroundColor = .black
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
+        cell.backgroundColor = .primaryBackgroundColor
+        cell.cellNameLabel.text = NoteType.allCases[indexPath.item].rawValue
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        selectedNoteType = NoteType.allCases[indexPath.item]
+        print(selectedNoteType.rawValue)
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width:90, height: 35)
+//    }
+    
+    
+    
+    
 }
 
+*/
