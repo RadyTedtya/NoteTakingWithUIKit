@@ -17,7 +17,6 @@ enum NoteType: String, CaseIterable, Identifiable {
     
 }
 
-
 import UIKit
 
 class CollectionViewController: UIViewController {
