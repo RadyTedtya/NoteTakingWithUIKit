@@ -26,8 +26,6 @@
 		D3993D92299F1D86007CC205 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3993D91299F1D86007CC205 /* CollectionViewController.swift */; };
 		D3993D97299F291C007CC205 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3993D95299F291C007CC205 /* CollectionViewCell.swift */; };
 		D3993D98299F291C007CC205 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3993D96299F291C007CC205 /* CollectionViewCell.xib */; };
-		D3A9FE7E299E04D900DF3C81 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A9FE7D299E04D900DF3C81 /* SegmentView.swift */; };
-		D3A9FE80299E04ED00DF3C81 /* SegmentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A9FE7F299E04ED00DF3C81 /* SegmentView.xib */; };
 		D3D115C529974ABB009083A7 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D115C329974ABB009083A7 /* WelcomeViewController.swift */; };
 		D3D115C629974ABB009083A7 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D115C429974ABB009083A7 /* WelcomeViewController.xib */; };
 /* End PBXBuildFile section */
@@ -73,8 +71,6 @@
 		D3993D91299F1D86007CC205 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		D3993D95299F291C007CC205 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		D3993D96299F291C007CC205 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		D3A9FE7D299E04D900DF3C81 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
-		D3A9FE7F299E04ED00DF3C81 /* SegmentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SegmentView.xib; sourceTree = "<group>"; };
 		D3D115C329974ABB009083A7 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		D3D115C429974ABB009083A7 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -143,8 +139,6 @@
 				D335122F29973E0C004AF8D5 /* Assets.xcassets */,
 				D32953B7299754A800576252 /* ImageCustomTableViewCell.swift */,
 				D32953B8299754A800576252 /* ImageCustomTableViewCell.xib */,
-				D3A9FE7D299E04D900DF3C81 /* SegmentView.swift */,
-				D3A9FE7F299E04ED00DF3C81 /* SegmentView.xib */,
 				D32953CF2997705800576252 /* TableViewHeader.swift */,
 				D335123129973E0C004AF8D5 /* LaunchScreen.storyboard */,
 				D335123429973E0C004AF8D5 /* Info.plist */,
@@ -279,7 +273,6 @@
 				D32953BA299754A800576252 /* ImageCustomTableViewCell.xib in Resources */,
 				D335123029973E0C004AF8D5 /* Assets.xcassets in Resources */,
 				D335122E29973E0B004AF8D5 /* Main.storyboard in Resources */,
-				D3A9FE80299E04ED00DF3C81 /* SegmentView.xib in Resources */,
 				D335125929974985004AF8D5 /* HomeViewController.xib in Resources */,
 				D3993D98299F291C007CC205 /* CollectionViewCell.xib in Resources */,
 			);
@@ -308,7 +301,6 @@
 			files = (
 				D32953B9299754A800576252 /* ImageCustomTableViewCell.swift in Sources */,
 				D3993D92299F1D86007CC205 /* CollectionViewController.swift in Sources */,
-				D3A9FE7E299E04D900DF3C81 /* SegmentView.swift in Sources */,
 				D32953BC299765C600576252 /* Color+Extension.swift in Sources */,
 				D335122B29973E0B004AF8D5 /* ViewController.swift in Sources */,
 				D3D115C529974ABB009083A7 /* WelcomeViewController.swift in Sources */,
